@@ -1,0 +1,25 @@
+{%  load static %}
+{%  load humanize %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        {% block title %}<title>{core}</title>
+        {% endblock %}
+    </head>
+<body>
+    <div class="container">
+    {% block content %}
+        <p>123</p>
+        {{ Profile.id  }}
+    {% endblock %}
+    </div>
+</body>
+    <footer>
+
+        {% block footer %}
+
+        {% endblock %}
+
+    </footer>
+</html>
